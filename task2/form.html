@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <form>
+    <h1>Регистрация</h1>
+       <hr>
+       <label for="email">E-mail</label>
+       <input type="email" name="email" id="email" placeholder="example@site.domain" required>
+       <div class="password-wrapper">
+        <label for="password">Пароль</label>
+        <label for="repeatPassword">Повторите пароль</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        <input type="password" name="repeatPassword" id="repeatPassword" placeholder="password" required>
+       </div>
+       <label for="nameUser">ФИО</label>
+       <input type="text" name="nameUser" id="nameUser" placeholder="Игорев Игорь Игоревич" required pattern="[а-яА-ЯёЁa-zA-Z]{1,20}\s[а-яА-ЯёЁa-zA-Z]{1,20}\s[а-яА-ЯёЁa-zA-Z]{1,20}">
+       <label for="ageUser">Возраст</label>
+       <input type="number" name="ageUser" id="ageUser" placeholder="18" required min="1" max="150">
+       <hr>
+       <div class="buttons">
+        <input type="submit" class="button submit" value="Отправить">    
+        <input type="reset" class="button reset" value="Отмена">
+       </div>
+   </form>
+</body>
+</html>

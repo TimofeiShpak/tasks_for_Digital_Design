@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    position: relative;
+    width: 400px;
+    height: 448px;
+    background: #9C9C9C;
+    border: 2px solid #626262;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3A3A3A;
+    margin: 20px 0 5px 0;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #9C9C9C;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 28px;
+    width: -webkit-fill-available;
+}
+
+hr {
+    width: 396px;
+    background: #C4C4C4;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+.password-wrapper {
+    display: grid;
+    grid-template-columns: 175px 175px;
+    grid-column-gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+}
+
+#ageUser {
+    width: 175px;
+}
+
+.button {
+    height: 32px;
+    padding: 8px 12px;
+    background: #616161;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #CCCCCC;
+}
+
+.submit {
+    width: 95px;
+}
+
+.reset {
+    width: 74px;   
+}
+
+.button:hover {
+    padding: 8px 12px;
+    background: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #616161;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder { 
+    color: #CCCCCC;
+}
+:-ms-input-placeholder { 
+    color: #CCCCCC;
+}
+::-moz-placeholder { 
+    color: #CCCCCC;
+    opacity: 1;
+}
+:-moz-placeholder { 
+    color: #CCCCCC;
+    opacity: 1;
+}
