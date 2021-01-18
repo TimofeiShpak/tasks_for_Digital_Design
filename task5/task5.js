@@ -4,7 +4,7 @@ function fillArray() {
 	for (let i = 0; i < 5; i++) {
         arr[i] = Math.round(Math.random()*200-100);
     }
-    return arr;
+    return arr.slice(0);
 }
 
 
